@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="shortcut icon" href="/favicon.png" type="imgage/x-icon">
+    <title>Cleancode</title>
+    
+   
+    <style>
+
+*{ 
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+
+html {
+    height: 100vh;
+}
+
+        body{
+            background-color: #481a82;
+            background-image: linear-gradient(#711adb4f, #201d25);
+            background-repeat: no-repeat;
+            background-position: top;
+            background-attachment: scroll;
+        }
+        
+        header{
+            background-color: #84529fd7;
+            text-align: center;
+            margin-top: 3px;
+            border-radius: 7px 7px 0px 0px;
+            width: 90vw;
+            margin: auto;
+        }
+
+         header>h1{
+        color: #dacfbf;
+        margin-top: 17px;
+        text-align: center;
+       }
+       
+
+        menu {
+            color: whitesmoke;
+            text-align: center;
+            list-style-type: none;
+            width: 90vw;
+            margin: auto;
+         }
+
+        menu>ul {
+            list-style-type: none;
+        }
+
+        menu>ul>li>a {
+    display: block;
+    padding: 7px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0px 0px 0px 0px;
+    color: whitesmoke;
+    margin: auto;
+    }
+
+        main{
+            height: max-content;
+            text-align: justify;
+            padding: 7px 7px 10px 10px;
+            margin: auto;
+        }
+
+       
+
+
+       article{
+        gap: 15px;
+        background-color: #201d25;
+        color: #edd8bdb1;
+        margin: auto;
+        padding: 5px; 
+        width: 90vw;
+        }
+
+        article>p{
+        color: #edd8bdb1;
+        display: flex;
+        margin: auto;
+        margin: auto;
+        align-items: flex-start;
+        padding: 9px;
+
+
+       }
+
+       article>h2{
+        text-align: center;
+       }
+
+      h3{
+        color: antiquewhite;
+        text-align: center;
+       }
+
+       footer{
+        background-color: #8552d7;
+        width: 90vw;
+        margin: auto;
+        padding: 9px;
+        border-radius: 0px 0px 7px 7px;
+       }
+
+       footer>p{
+          color: antiquewhite;   
+        text-align: center;
+       }
+
+       .container {
+        display: flex;
+        align-items: center;
+    } 
+      
+    </style>
+
+</head>
+<body>
+
+ 
+    <header>
+        <h1>Clean code</h1>
+    </header>
+
+    
+      <main>
+    <article>
+        <div class="container" id="container">
+        <img src="/Clean-And-Code-in-2020.png" width="300" height="300" id="mobile">
+
+        <h2>Clean code</h2>
+
+        <p>  Clean Code (ou código limpo) é um conjunto de princípios e boas práticas para escrever código de forma legível, compreensível e fácil de manter. O conceito foi popularizado por Robert C. Martin,
+            também conhecido como "Uncle Bob", no livro Clean Code: A Handbook of Agile Software Craftsmanship. O objetivo do Clean Code é criar códigos que sejam simples, diretos e que sigam 
+            convenções claras, facilitando a leitura e a colaboração entre desenvolvedores. Isso envolve nomear variáveis de forma significativa, escrever funções pequenas e focadas,
+            evitar duplicação de código e aplicar padrões consistentes. O Clean Code visa a longo prazo melhorar a qualidade do software, reduzir bugs e tornar a manutenção mais ágil.
+ 
+            A seguir, explico os principais pontos que caracterizam o Clean Code:</p>
+        </article>  
+        
+         <article>
+        <p>
+            1. Legibilidade
+             O código limpo deve ser fácil de ler e entender, tanto para o autor quanto para outros desenvolvedores que precisem interagir com ele no futuro.
+             A legibilidade é fundamental porque facilita a manutenção e a evolução do sistema, além de reduzir a probabilidade de erros.</p>
+        
+           
+        <p>
+            2. Simplicidade
+             O código limpo é simples, sem complexidade desnecessária. Ele deve resolver o problema de maneira direta e eficiente, sem criar soluções
+            complicadas que dificultam o entendimento ou a manutenção. </p>
+
+       
+        <p>
+            3. Manutenibilidade:
+             Manutenibilidade significa que o código pode ser facilmente modificado ou estendido sem causar efeitos indesejados.
+             Isso é crucial em sistemas que evoluem ao longo do tempo.  </p>
+      
+        
+        <p>
+            4. Testabilidade:
+             O código limpo facilita a criação de testes automatizados. Ao escrever código que é simples, modular e bem estruturado, torna-se mais fácil
+             testar as unidades de código individualmente. </p>
+
+       
+        <p>
+            5. Refatoração
+             Refatorar o código é um processo contínuo e importante no Clean Code. Refatoração significa reescrever o código sem alterar seu comportamento, apenas melhorando sua estrutura, legibilidade e eficiência.
+             A refatoração deve ser uma parte do ciclo de desenvolvimento, não apenas algo feito quando há problemas. </p>
+       
+
+        <p>
+            6. Princípios de Clean Code
+             Robert C. Martin (Uncle Bob) descreve vários princípios importantes no livro Clean Code, alguns dos quais incluem:
+
+             Princípio de responsabilidade única (SRP - Single Responsibility Principle): cada classe ou módulo deve ter uma única responsabilidade.
+             Princípio de substituição de Liskov (LSP - Liskov Substitution Principle): os objetos de uma classe derivada devem ser substituíveis por objetos da classe base, sem alterar o comportamento do sistema.
+             Princípio de segregação de interfaces (ISP - Interface Segregation Principle): em vez de criar interfaces grandes e genéricas, é melhor criar interfaces menores e específicas para cada tipo de cliente.
+            Princípio de inversão de dependência (DIP - Dependency Inversion Principle): módulos de alto nível não devem depender de módulos de baixo nível, mas ambos devem depender de abstrações. </p>
+        </article>
+
+       <article>
+
+        <h3>Conclusão</h3>
+        <p>
+            Conclusão
+             Adotar os princípios do Clean Code é uma prática essencial para qualquer desenvolvedor que queira criar sistemas robustos, legíveis e de fácil manutenção. Não é uma abordagem rígida,
+             mas um guia que, quando seguido, pode melhorar significativamente a qualidade do software e a experiência de trabalho em equipe. Ao escrever código limpo, você não só melhora a qualidade do seu código,
+             mas também facilita a colaboração e a evolução do sistema ao longo do tempo. </p>
+       
+   </article>
+
+</main>
+    <footer>
+        <p>
+              Luis_F 2024
+        </p>
+    </footer>
+</body>
+
+
+</html>
