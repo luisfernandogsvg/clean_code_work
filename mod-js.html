@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="shortcut icon" href="../clean_code_work/" type="imgage/x-icon">
+    <title>modulação em java</title>
+    
+   
+    <style>
+        * { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    background-image: linear-gradient(#711adb4f, #201d25);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+}
+
+header {
+    background-color: #84529fd7;
+    border-radius: 7px 7px 7px 7px;
+    margin: 3px auto;
+    text-align: center;
+    width: 90vw;
+}
+
+header > h1 {
+    color: #dacfbf;
+    margin-top: 17px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+menu {
+    color: whitesmoke;
+    list-style-type: none;
+    margin: auto;
+    text-align: center;
+    width: 90vw;
+}
+
+menu > ul {
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    border-radius: 0;
+    color: whitesmoke;
+    display: block;
+    margin: auto;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+}
+
+main {
+    height: max-content;
+    margin: auto;
+    padding: 7px 10px;
+    text-align: justify;
+}
+
+p {
+    color: #edd8bdb1;
+    display: flex;
+    margin: auto;
+    align-items: flex-start;
+    padding: 5px;
+}
+
+article {
+    background-color: #201d25;
+    color: #edd8bdb1;
+    gap: 15px;
+    margin: auto;
+    padding: 10px;
+    width: 90vw;
+}
+
+h3 {
+    color: antiquewhite;
+    padding: 9px;
+    text-align: center;
+}
+
+footer {
+    background-color: #8552d7;
+    color: antiquewhite;
+    border-radius: 0 0 7px 7px;
+    margin: auto;
+    padding: 3px;
+    text-align: center;
+    width: 90vw;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+    </style>
+
+</head>
+<body>
+
+ 
+    <header>
+        <h1>modulação em JavaScript</h1>
+    </header>
+
+    <menu id="itens">
+        <ul>
+          <li><a href="index.html">Clean code</a></li>
+          <li><a href="mod-js.html">Modulação em JS</a></li>
+      </ul>
+  </menu>
+
+      <main>
+    <article> 
+        <div class="container" id="container">
+        <img src="../clean_code_work/clean_code_js.png" width="300" height="300" id="mobile">
+
+       
+
+        <p> Modulação em JavaScript refere-se ao processo de dividir um código em unidades
+             menores e reutilizáveis, chamadas módulos. Esse conceito é importante para 
+             melhorar a organização, manutenção e legibilidade do código. No JavaScript moderno, a modulação 
+             é facilitada através de duas principais abordagens: CommonJS e ES Modules (ESM).
+
+            A seguir, explico os principais pontos que caracterizam o Clean Code:</p>
+        </article>  
+        
+         <article>
+
+            <h3>Benefícios da Modulação:</h3>
+
+        <p>Reutilização: Código modular pode ser reutilizado
+             em diferentes partes do projeto, evitando duplicação.</p>
+        
+        <p>Manutenibilidade: Dividir o código em pequenos módulos
+             facilita a localização de bugs e a implementação de melhorias.</p>
+
+        <p>Escalabilidade: Em projetos grandes, a modulação ajuda
+             a manter o código organizado, facilitando sua expansão.
+         </p>
+      
+        
+        <p>Isolamento: Módulos isolam funcionalidades, evitando 
+            conflitos e tornando o código mais seguro.
+          </p>
+
+          <h3>Vantagens da Modulação em JavaScript</h3>
+
+          <p>
+            Organização do código: Ao modularizar, você mantém cada parte
+            do código focada em uma responsabilidade específica, facilitando sua manutenção.
+          </p>
+
+          <p>
+            Reusabilidade: Você pode reutilizar os módulos em diferentes
+             partes do projeto ou em outros projetos, evitando duplicação de código.
+          </p>
+
+          <p>
+            Isolamento: Módulos podem ser independentes uns dos outros, o que torna
+            a aplicação menos suscetível a falhas, além de facilitar a identificação de erros.
+          </p>
+
+          <p>
+            Facilidade de testes: Testar um módulo
+             específico é mais simples, pois ele é isolado de outros módulos.
+          </p>
+
+        <h3>Conclusão</h3>
+
+        <p>
+            A modulação é um dos princípios fundamentais para organizar e estruturar código
+            JavaScript de maneira eficiente. Ela permite que você crie módulos independentes
+            que podem ser facilmente reutilizados e mantidos. Com a evolução do JavaScript, a modulação
+            se tornou ainda mais acessível tanto para o back-end (com CommonJS) quanto para o front-end (com ES Modules).
+            Usar módulos ajuda a manter o código limpo, legível, testável e mais fácil de escalar conforme os projetos crescem.
+        </p>
+       
+</main>
+    <footer>Luis_F 2024</footer>
+</body>
+
+
+</html>
